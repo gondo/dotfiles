@@ -1,5 +1,6 @@
-# Paul's dotfiles
+# gondo's dotfiles
 
+[pauls's readme](https://github.com/paulirish/dotfiles/) is awesome. go read it.
 [mathias's readme](https://github.com/mathiasbynens/dotfiles/) is awesome. go read it.
 
 This repo is mostly for me but you're welcome to make suggestions. Mathias's is the project to fork.  I'm mostly catching up to him, @cowboy, and @gf3.
