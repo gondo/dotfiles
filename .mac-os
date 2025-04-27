@@ -187,9 +187,6 @@ defaults write com.apple.finder ShowPathbar -bool true
 # Finder: show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
 
-# Finder: Show the ~/Library folder
-chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
-
 # Set the default search scope when performing a search in Finder to the current folder
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf" 
 
