@@ -15,26 +15,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
   zsh-completions
   Zsh-bat
 
-brew:
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-cli tools:
-- xcode-select --install
-- jq
-- curl
-- git
-- go ?
-- wget
-- node, npm (separate?)
-- graphicsmagick (image)
-- chatgpt app
-- raycast ???
 
 git
 # https://www.robinwieruch.de/mac-setup-web-development/#git
 # + my existing config
 - config https://github.com/gondo/dotfiles/blob/master/.gitconfig
 - default .gitignore https://github.com/gondo/dotfiles/blob/master/.gitconfig
+
 
 ssh:
 # https://www.robinwieruch.de/mac-setup-web-development/#ssh

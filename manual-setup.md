@@ -46,13 +46,13 @@ New Mac setup
         - Turn display off on battery: 10min
         - Turn display off on power: Never
     - Internet Accounts:
-        - TODO Add: m.gondara.au, michal.gondar, hi@michalgondar
+        - Add accounts
     - Game Center:
         - Sign out
     - iCloud:
         - Drive: off
     - Wallet:
-        - email: hi@michalgondar
+        - email: hi@michalgondar.com
         - Hide My Email: on
     - Keyboard:
         - Key repeat rate: Fastest
@@ -98,4 +98,14 @@ New Mac setup
     - Advanced
         - Turn on time zone support: on
         - Show events in year view: on
+- Messages
+    - Sharing: Off
+    - iCloud sync: On
+- Pages:
+    - show word count
+- Apple Mail
+    - show most recent message at top
+    - undo send delay set to off
+- Quick Time Player
+    - save to Desktop 
 

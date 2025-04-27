@@ -1,4 +1,4 @@
-# DotFiles
+#!/usr/bin/env bash
 
 ###############################################################################
 # MacOS
@@ -44,31 +44,18 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
-# Privacy: don’t send search queries to Apple
-defaults write com.apple.Safari UniversalSearchEnabled -bool false
-defaults write com.apple.Safari SuppressSearchSuggestions -bool true
-
 # Show the /Volumes folder
 sudo chflags nohidden /Volumes
 
-# Only use UTF-8 in Terminal.app
-defaults write com.apple.terminal StringEncodings -array 4
-
-# Enable Secure Keyboard Entry in Terminal.app
-# See: https://security.stackexchange.com/a/47786/8918
-defaults write com.apple.terminal SecureKeyboardEntry -bool true
-
 # Prevent Time Machine from prompting to use new hard drives as backup volume
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
-
-# Disable local Time Machine backups
-hash tmutil &> /dev/null && sudo tmutil disablelocal
 
 # Show all processes in Activity Monitor
 defaults write com.apple.ActivityMonitor ShowCategory -int 0
 
 # Use plain text mode for new TextEdit documents
 defaults write com.apple.TextEdit RichText -int 0
+
 # Open and save files as UTF-8 in TextEdit
 defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
@@ -88,6 +75,19 @@ defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 # Enable "spring-loading" for directories in Finder and speed it up. (Drag files into folders faster.)
 defaults write NSGlobalDomain com.apple.springing.enabled -bool true
 defaults write NSGlobalDomain com.apple.springing.delay -float 0.1
+
+#======================Terminal.app settings =================
+
+# Only use UTF-8 in Terminal.app
+defaults write com.apple.terminal StringEncodings -array 4
+
+# Enable Secure Keyboard Entry in Terminal.app
+# See: https://security.stackexchange.com/a/47786/8918
+defaults write com.apple.terminal SecureKeyboardEntry -bool true
+
+# Set Terminal.app to use "Pro" profile (a dark theme)
+defaults write com.apple.Terminal "Default Window Settings" -string "Argonaut"
+defaults write com.apple.Terminal "Startup Window Settings" -string "Argonaut"
 
 #======================Trackpad settings =================
 
@@ -193,58 +193,3 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 # Finder: restart
 killall Finder
 
-
-###############################################################################
-# Google Chrome & Google Chrome Canary                                        #
-# TODO: maybe, once Chrome installed
-###############################################################################
-
-# Disable the all too sensitive backswipe on trackpads
-#defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
-#defaults write com.google.Chrome.canary AppleEnableSwipeNavigateWithScrolls -bool false
-
-# Disable the all too sensitive backswipe on Magic Mouse
-#defaults write com.google.Chrome AppleEnableMouseSwipeNavigateWithScrolls -bool false
-#defaults write com.google.Chrome.canary AppleEnableMouseSwipeNavigateWithScrolls -bool false
-
-# Use the system-native print preview dialog
-#defaults write com.google.Chrome DisablePrintPreview -bool true
-#defaults write com.google.Chrome.canary DisablePrintPreview -bool true
-
-# Expand the print dialog by default
-#defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
-
-# Always show full URL in address bar, including https://.
-#defaults write com.google.Chrome ShowFullURLsInAddressBar -bool true
-
-#echo "Chrome needs restart"
-
-
-###############################################################################
-# Transmission.app                                                            #
-###############################################################################
-
-# Use `~/Documents/Torrents` to store incomplete downloads
-#defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
-#defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Documents/Torrents"
-
-# Use `~/Downloads` to store completed downloads
-defaults write org.m0k.transmission DownloadLocationConstant -bool true
-
-# Don’t prompt for confirmation before downloading
-defaults write org.m0k.transmission DownloadAsk -bool false
-defaults write org.m0k.transmission MagnetOpenAsk -bool false
-
-# Don’t prompt for confirmation before removing non-downloading active transfers
-defaults write org.m0k.transmission CheckRemoveDownloading -bool true
-
-# Trash original torrent files
-defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
-
-# Hide the donate message
-defaults write org.m0k.transmission WarningDonate -bool false
-# Hide the legal disclaimer
-defaults write org.m0k.transmission WarningLegal -bool false
-
-# Randomize port on launch
-defaults write org.m0k.transmission RandomPort -bool true
