@@ -45,7 +45,7 @@ brew install --cask \
     iterm2 \
     keycastr \
     rectangle \
-    shortcuts \
+    shotcut \
     spotify \
     sublime-text \
     ticktick \
@@ -73,7 +73,7 @@ mas install 1564578427
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
   echo "Oh My Zsh not found. Installing..."
 
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  RUNZSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 else
   echo "Oh My Zsh is already installed."
 fi
