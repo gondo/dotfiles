@@ -127,6 +127,9 @@ defaults write com.apple.dock expose-animation-duration -float 0.1
 # (i.e. use the old Exposé behavior instead)
 defaults write com.apple.dock expose-group-by-app -bool false
 
+# Enable App Exposé gesture even if disabled.
+defaults write com.apple.dock showAppExposeGestureEnabled -bool true
+
 # Remove the auto-hiding Dock delay
 defaults write com.apple.dock autohide-delay -float 0
 
