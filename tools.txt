@@ -1,0 +1,44 @@
+# https://www.robinwieruch.de/mac-setup-web-development/
+
+cli
+- prompt setup (with branch) https://github.com/gondo/dotfiles/blob/master/.bash_prompt
+- history: https://github.com/gondo/dotfiles/blob/master/.exports
+
+
+ZSH, oh my zsh (via brew?)
+https://www.robinwieruch.de/mac-setup-web-development/#oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+- review installed plugins and install
+- plugins:
+  Zsh-syntax-highlighting
+  Zsh-autosuggestions
+  zsh-completions
+  Zsh-bat
+
+brew:
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+cli tools:
+- xcode-select --install
+- jq
+- curl
+- git
+- go ?
+- wget
+- node, npm (separate?)
+- graphicsmagick (image)
+- chatgpt app
+- raycast ???
+
+git
+# https://www.robinwieruch.de/mac-setup-web-development/#git
+# + my existing config
+- config https://github.com/gondo/dotfiles/blob/master/.gitconfig
+- default .gitignore https://github.com/gondo/dotfiles/blob/master/.gitconfig
+
+ssh:
+# https://www.robinwieruch.de/mac-setup-web-development/#ssh
+# + my existing configs
+# generate new kesy to access what needed
+- to connect to: appio server, github, bitbucket, rejstriky, rejtriky-wedos
+- 
