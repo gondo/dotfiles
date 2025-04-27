@@ -82,6 +82,13 @@ defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
+# Prevents apps from closing themselves when inactive
+defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
+
+# Enable "spring-loading" for directories in Finder and speed it up. (Drag files into folders faster.)
+defaults write NSGlobalDomain com.apple.springing.enabled -bool true
+defaults write NSGlobalDomain com.apple.springing.delay -float 0.1
+
 #======================Trackpad settings =================
 
 # Trackapd re-set default values
@@ -206,6 +213,11 @@ killall Finder
 
 # Expand the print dialog by default
 #defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
+
+# Always show full URL in address bar, including https://.
+#defaults write com.google.Chrome ShowFullURLsInAddressBar -bool true
+
+#echo "Chrome needs restart"
 
 
 ###############################################################################
