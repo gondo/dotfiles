@@ -8,7 +8,7 @@
 
 ## TODO:
 
-tools.sh
+review and process tools.sh
 Move documents
 Move keychains
 setup thunderbird accounts
