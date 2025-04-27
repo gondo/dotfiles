@@ -1,0 +1,101 @@
+New Mac setup
+
+- Install updates
+- Notes: 
+    - Automatically sort ticked items: on
+    - Allow mention notifications: off
+    - Group notes by date: off
+- Settings:
+    - Appearance:
+        - Appearance: Auto
+        - Show scroll bars: always
+        - Click in the scroll bar: jump to the spot
+    - Battery:
+        - Prevent automatic sleeping on battery: on
+    - General:
+        - Language & Region:
+            - Preferred Languages: add Slovak
+            - Measurement system: Metric
+            - Translation Languages:
+                - Download: EN UK, FR
+        - Login Items & Extensions
+            - Sharing:
+                - All: off
+                - Copy Link: on
+    - Displays:
+        - Auto brightness: off
+        - Night Shift:
+            - Schedule: Sunset to Sunrise
+    - Sharing:
+        - File Sharing: on + Allow full disk access: on
+        - Options: Account: on
+    - Desktop & Dock
+        - Position: Right
+        - Automatically hide and show: on
+        - Show suggestions: off
+        - Tiled windows have margins: off
+        - Auto rearrange Spaces: off
+        - Shortcuts: all off
+        - Hot Corners: all off
+    - Screen Saver:
+        - Show as wallpaper: off
+    - Screen time
+        - Share across devices: off
+    - Lock Screen:
+        - Start screen saver: never
+        - Turn display off on battery: 10min
+        - Turn display off on power: Never
+    - Internet Accounts:
+        - TODO Add: m.gondara.au, michal.gondar, hi@michalgondar
+    - Game Center:
+        - Sign out
+    - iCloud:
+        - Drive: off
+    - Wallet:
+        - email: hi@michalgondar
+        - Hide My Email: on
+    - Keyboard:
+        - Key repeat rate: Fastest
+        - Turn keyboard backlight off after: 10s
+        - Press PLANET key to: change input source
+        - Keyboard shortcuts:
+            - Launchpad * Dock: all off
+            - Keyboard:
+                - Change the way Tab move focus: off
+                - Turn keyboard access on or off: off
+            - Input Sources:
+                - Select previous: Shift+Cmd+Space
+            - Services
+                - Search with google: off
+                - Text: all off
+            - Spotlight
+                - Show Finder search: off
+            - Accessibility: all off
+            - App Shortcuts: all off
+        - Text Replacement: delete all
+    - Trackpad:
+        - Point & Click:
+            - Force click: off
+            - Look up: off
+            - Tap to click: on
+        - More Gestures:
+            - Swipe between pages: off
+            - Notification centre: off
+            - App Expose: Swipe down
+            - Launch pad: off
+- Dock:
+    - Remove all
+- Mail:
+    - Accounts:
+        - Enable this action: off on all
+    - Viewing:
+        - Include related messages: off
+- Calendar:
+    - General:
+        - Default calendar: Main
+        - Show Birthdays calendar: off
+        - Show Holidays calendar: off
+    - Advanced
+        - Turn on time zone support: on
+        - Show events in year view: on
+
