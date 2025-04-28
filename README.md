@@ -10,6 +10,12 @@
 `./apps/git.sh`
 
 
+## ZSH
+Review `~/.zshrc`
+Create and copy `~/.zshenv` (no linking needed, auto recognised by ZSH)
+`source ~/.zshrc`
+
+
 ## SSH
 ```
 mkdir ~/.ssh
@@ -77,3 +83,6 @@ Migrate `~/Documents`
 Setup Thunderbird or Mail accounts.
 Mail have issues with aliasses but give it a go.
 
+
+## GoLand
+TODO
