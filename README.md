@@ -22,14 +22,18 @@ chmod 600 ~/.ssh/config
 
 Github SSH key
 ```
+ssh-keygen -t ed25519 -C "github"
+eval "$(ssh-agent -s)"
 ssh-add --apple-use-keychain ~/.ssh/github-macbook-m4
-ssh-keygen -t ed25519 -C "github-macbook-m4"
 
 # copy public key and add it to https://github.com/
-bat ~/.ssh/id_rsa.pub | pbcopy
+pbcopy < ~/.ssh/id_rsa.pub
+
+# test connection
+ssh -T git@github.com
 ```
 
-Clean up old SSH control sockets
+Auto-clean old SSH sockets
 ```
 echo -e '\n# Clean old SSH control sockets older than 1 day\nmkdir -p ~/.ssh/tmp && find ~/.ssh/tmp -type s -mtime +1 -delete' >> ~/.zshrc
 source ~/.zshrc
