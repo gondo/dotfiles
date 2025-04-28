@@ -32,7 +32,7 @@ pbcopy < ~/.ssh/github-macbook-m4.pub
 # test connection
 ssh -T git@github.com
 
-# test signature
+# test signature inside git repo
 git log --show-signature
 ```
 
