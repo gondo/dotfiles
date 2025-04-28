@@ -6,7 +6,43 @@
 4. Programatic apps setup: `./apps-setup.sh`
 
 
-## TODO:
+## Git
+`apps/git.sh`
+
+
+## SSH
+```
+mkdir ~/.ssh
+mkdir ~/.ssh/tmp
+cd ~/.ssh
+
+cp apps/ssh.config ~/.ssh/config
+chmod 600 ~/.ssh/config
+```
+
+Github SSH key
+```
+ssh-add --apple-use-keychain ~/.ssh/github-macbook-m4
+ssh-keygen -t ed25519 -C "github-macbook-m4"
+
+# copy public key and add it to https://github.com/
+bat ~/.ssh/id_rsa.pub | pbcopy
+```
+
+Clean up old SSH control sockets
+```
+echo -e '\n# Clean old SSH control sockets older than 1 day\nmkdir -p ~/.ssh/tmp && find ~/.ssh/tmp -type s -mtime +1 -delete' >> ~/.zshrc
+source ~/.zshrc
+```
+
+
+## Sublime Text
+Use `Preferences.sublime-settings` for settings.
+
+
+
+
+# TODO:
 
 review and process tools.sh
 Move documents
