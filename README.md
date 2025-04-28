@@ -60,9 +60,20 @@ killall iTerm2
 ```
 
 
-# TODO:
+## Manually migrate keychains
+Copy `.keychain-db` files from `~/Library/Keychains/` to new computer to `~/Library/Keychains/custom/`
+On new computer open `Keychain Access.app`, File > Add Keychain... and add all one by one.
 
-Move Documents
-Move Keychains
-Setup Thunderbird accounts
+
+## Electrum
+Migrate wallt `~/.electrum/wallets`.
+
+
+## Documents
+Migrate `~/Documents`
+
+
+## Mail
+Setup Thunderbird or Mail accounts.
+Mail have issues with aliasses but give it a go.
 
