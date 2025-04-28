@@ -109,3 +109,6 @@ New Mac setup
 - Quick Time Player
     - save to Desktop 
 
+
+# Trash in Finder
+Open the Trash, then go to the File menu and click "Add to Sidebar", and it'll show up.
