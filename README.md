@@ -58,9 +58,9 @@ killall iTerm2
 
 # TODO:
 
-review and process tools.sh
+Review and process tools.sh
 Move documents
 Move keychains
-setup thunderbird accounts
-setup passkeys for: github, all google accounts
+Move or generate new ssh keys
+Setup thunderbird accounts
 
