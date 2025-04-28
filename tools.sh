@@ -15,6 +15,8 @@ else
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
+brew analytics off
+
 brew install --formula \
     bat \
     btop \
@@ -32,6 +34,7 @@ brew install --cask \
     android-studio \
     appcleaner \
     apptrap \
+    chatgpt \
     devcleaner \
     docker \
     easyfind \
