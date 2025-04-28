@@ -31,9 +31,6 @@ pbcopy < ~/.ssh/github-macbook-m4.pub
 
 # test connection
 ssh -T git@github.com
-
-# test signature inside git repo
-git log --show-signature
 ```
 
 Auto-clean old SSH sockets
@@ -65,9 +62,7 @@ killall iTerm2
 
 # TODO:
 
-Review and process tools.sh
-Move documents
-Move keychains
-Move or generate new ssh keys
-Setup thunderbird accounts
+Move Documents
+Move Keychains
+Setup Thunderbird accounts
 
