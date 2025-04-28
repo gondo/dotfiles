@@ -12,7 +12,7 @@
 
 ## ZSH
 Review `~/.zshrc`
-Create and copy `~/.zshenv` (no linking needed, auto recognised by ZSH)
+Create and copy `~/.zshenv`, `~/.zprofile`, `~/.zlogin` (no linking needed, auto recognised by ZSH)
 `source ~/.zshrc`
 
 
@@ -68,7 +68,7 @@ killall iTerm2
 
 ## Manually migrate keychains
 Copy `.keychain-db` files from `~/Library/Keychains/` to new computer to `~/Library/Keychains/custom/`
-On new computer open `Keychain Access.app`, File > Add Keychain... and add all one by one.
+On new computer open `Keychain Access.app`, File → Add Keychain... and add all one by one.
 
 
 ## Electrum
@@ -76,7 +76,7 @@ Migrate wallt `~/.electrum/wallets`.
 
 
 ## Documents
-Migrate `~/Documents`
+Migrate `~/Documents`, `~/Developer`
 
 
 ## Mail
@@ -85,4 +85,13 @@ Mail have issues with aliasses but give it a go.
 
 
 ## GoLand
-TODO
+Auto sync via:
+GoLand → Preferences → Settings Sync → Enable Settings Sync
+
+Or manually copy config directory
+`~/Library/Application Support/JetBrains/GoLand<year.version>/`
+List installed plugins:
+`ls ~/Library/Application\ Support/JetBrains/GoLand<year.version>/plugins/ | sort`
+
+
+
