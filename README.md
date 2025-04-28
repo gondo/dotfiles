@@ -7,7 +7,7 @@
 
 
 ## Git
-`apps/git.sh`
+`./apps/git.sh`
 
 
 ## SSH
@@ -16,7 +16,7 @@ mkdir ~/.ssh
 mkdir ~/.ssh/tmp
 cd ~/.ssh
 
-cp apps/ssh.config ~/.ssh/config
+cp ./apps/ssh.config ~/.ssh/config
 chmod 600 ~/.ssh/config
 ```
 
@@ -41,9 +41,16 @@ source ~/.zshrc
 
 
 ## Sublime Text
-Use `Preferences.sublime-settings` for settings.
+```
+cp ./apps/preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text/Packages/User/Preferences.sublime-settings
+```
 
 
+## iTerm2
+```
+cp ./apps/com.googlecode.iterm2.plist ~/Library/Preferences/
+killall iTerm2
+```
 
 
 # TODO:
