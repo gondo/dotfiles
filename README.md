@@ -26,11 +26,14 @@ ssh-keygen -t ed25519 -C "github"
 eval "$(ssh-agent -s)"
 ssh-add --apple-use-keychain ~/.ssh/github-macbook-m4
 
-# copy public key and add it to https://github.com/
+# copy public key and add it to https://github.com/settings/keys as both Authentication and Signing key
 pbcopy < ~/.ssh/github-macbook-m4.pub
 
 # test connection
 ssh -T git@github.com
+
+# test signature
+git log --show-signature
 ```
 
 Auto-clean old SSH sockets
