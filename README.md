@@ -48,6 +48,13 @@ source ~/.zshrc
 cp ./apps/preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text/Packages/User/Preferences.sublime-settings
 ```
 
+Prevent license check:
+```
+sudo vi /etc/hosts
+127.0.0.1   license.sublimehq.com
+sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+```
+
 
 ## iTerm2
 ```

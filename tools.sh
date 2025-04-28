@@ -43,6 +43,7 @@ brew install --cask \
     firefox \
     goland \
     google-chrome \
+    hex-fiend \
     httpie \
     imageoptim \
     iterm2 \
