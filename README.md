@@ -27,7 +27,7 @@ eval "$(ssh-agent -s)"
 ssh-add --apple-use-keychain ~/.ssh/github-macbook-m4
 
 # copy public key and add it to https://github.com/
-pbcopy < ~/.ssh/id_rsa.pub
+pbcopy < ~/.ssh/github-macbook-m4.pub
 
 # test connection
 ssh -T git@github.com
