@@ -148,6 +148,18 @@ defaults write com.apple.dock show-recents -bool false
 # Do not rearrange spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
+# Remove persistent apps from the dock 
+defaults delete com.apple.dock persistent-apps
+
+# Remove items that are not apps, folders, or other commonly pinned items from the Dock
+defaults delete com.apple.dock persistent-others
+
+# Remove the recent applications list from the Dock on macOS
+defaults delete com.apple.dock recent-apps
+
+# Dock: restart
+killall Dock
+
 
 ###############################################################################
 # Finder

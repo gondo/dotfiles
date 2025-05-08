@@ -17,4 +17,13 @@ git config --global url.ssh://git@bitbucket.org/.insteadof https://bitbucket.org
 git config --global url.git@github.com:.insteadof https://github.com/
 git config --global pull.rebase true
 git config --global submodule.recurse true
+git config --global color.ui true
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+# Better dif alogorithm
+git config --global diff.algorithm histogram
+# Transparent encrypted diffs
+git config --global diff.gpg.textconv "gpg --no-tty --decrypt"
+# Credentials - we want to handle these ourselves via ssh keys
+git config --local --unset credential.helper
+git config --global --unset credential.helper
+git config --system --unset credential.helper

@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 
-xcode-select --install
+# Install Xcode line tools
+printf "\n Installing command line tools...\n"
+xcode-select --install &> /dev/null
+until $(xcode-select --print-path &> /dev/null); do
+  sleep 5;
+done
+sudo xcode-select --reset
 
 # Update OS
 sudo softwareupdate --install --all
