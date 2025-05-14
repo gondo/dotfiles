@@ -93,5 +93,20 @@ Or manually copy config directory
 List installed plugins:
 `ls ~/Library/Application\ Support/JetBrains/GoLand<year.version>/plugins/ | sort`
 
+JetBrains HTTP Client CLI
+```
+brew 
+cd /tmp
+curl -f -L -o ijhttp.zip "https://jb.gg/ijhttp/latest"
+unzip -q ijhttp.zip
+chmod +x ijhttp/ijhttp
+sudo mv ijhttp /usr/local/
+sudo ln -sf /usr/local/ijhttp/ijhttp /usr/local/bin/ijhttp
+rm -rf ijhttp.zip
+```
+
+
+
+
 
 

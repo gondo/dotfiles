@@ -54,6 +54,7 @@ brew install --cask \
     imageoptim \
     iterm2 \
     keycastr \
+    libpq \
     rectangle \
     shotcut \
     spotify \
@@ -64,6 +65,9 @@ brew install --cask \
     transmission \
     vlc \
     whatsapp \
+
+# Linking Postgresql keg (not installing the whole DB, that should be run in container)
+brew link --force libpq
 
 brew cleanup
 
