@@ -26,18 +26,50 @@ cp ./apps/ssh.config ~/.ssh/config
 chmod 600 ~/.ssh/config
 ```
 
-Github SSH key
+### GitHub SSH key
 ```
-ssh-keygen -t ed25519 -C "github"
+ssh-keygen -t ed25519 -C "hi@michalgondar.com" -f ~/.ssh/github
 eval "$(ssh-agent -s)"
-ssh-add --apple-use-keychain ~/.ssh/github-macbook-m4
+ssh-add --apple-use-keychain ~/.ssh/github
 
 # copy public key and add it to https://github.com/settings/keys as both Authentication and Signing key
-pbcopy < ~/.ssh/github-macbook-m4.pub
+pbcopy < ~/.ssh/github.pub
 
 # test connection
 ssh -T git@github.com
 ```
+
+Add to `~/.ssh/config`:
+```
+Host github.com
+    IdentityFile ~/.ssh/github
+    IdentitiesOnly yes
+    HostName github.com
+    User git
+```
+
+### GitLab SSH key
+```
+ssh-keygen -t ed25519 -C "hi@michalgondar.com" -f ~/.ssh/gitlab
+eval "$(ssh-agent -s)"
+ssh-add --apple-use-keychain ~/.ssh/gitlab
+
+# copy public key and add it to https://gitlab.com/-/user_settings/ssh_keys as both Authentication and Signing key
+pbcopy < ~/.ssh/gitlab
+
+ssh -T git@gitlab.com
+```
+
+Add to `~/.ssh/config`:
+```
+Host gitlab.com
+    IdentityFile ~/.ssh/gitlab
+    IdentitiesOnly yes
+    HostName gitlab.com
+    User git
+```
+
+### Clean-up
 
 Auto-clean old SSH sockets
 ```
