@@ -47,6 +47,7 @@ brew install --cask \
     electrum \
     figma \
     firefox \
+    ghostty \
     goland \
     google-chrome \
     hex-fiend \
