@@ -30,6 +30,7 @@ brew install --formula \
     git \
     go \
     graphicsmagick \
+    imageoptim-cli \
     jq \
     mas \
     node \
