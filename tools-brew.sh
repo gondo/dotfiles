@@ -35,6 +35,7 @@ brew install --formula \
     mas \
     node \
     rsync \
+    scrcpy \
     wget 
 
 brew install --cask \

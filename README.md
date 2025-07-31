@@ -2,7 +2,7 @@
 
 1. Programatic macOS setup: `./macos.sh`
 2. Follow manual macOS setup: `manual-setup.md`
-3. Install tools + apps: `./tools.sh`
+3. Install tools + apps: `./tools-brew.sh`
 4. Programatic apps setup: `./apps-setup.sh`
 
 
