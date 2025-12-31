@@ -112,8 +112,8 @@ Migrate `~/Documents`, `~/Developer`
 
 
 ## Mail
-Setup Thunderbird or Mail accounts.
-Mail have issues with aliasses but give it a go.
+Setup Apple Mail accounts.
+(as of 2025 not using Thunderbird)
 
 
 ## GoLand

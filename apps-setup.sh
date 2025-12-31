@@ -61,6 +61,9 @@ if open -Ra "Transmission"; then
 
     # Randomize port on launch
     defaults write org.m0k.transmission RandomPort -bool true
+
+    # Hide search bar to prevent it stealing focus so copy-pasting magneto links works directly after opening the app 
+    defaults write org.m0k.transmission FilterBar -bool false
 else
     echo "Transmission.app is not installed yet."
 fi
