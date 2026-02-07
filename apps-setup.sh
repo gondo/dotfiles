@@ -64,6 +64,9 @@ if open -Ra "Transmission"; then
 
     # Hide search bar to prevent it stealing focus so copy-pasting magneto links works directly after opening the app 
     defaults write org.m0k.transmission FilterBar -bool false
+
+    # Disable annoying and useless notifications about Torrent errors
+    defaults write org.m0k.transmission WarningDownloadFailed -bool false
 else
     echo "Transmission.app is not installed yet."
 fi
