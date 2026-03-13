@@ -33,18 +33,26 @@ New Mac setup
         - Position: Right
         - Automatically hide and show: on
         - Show suggestions: off
-        - Tiled windows have margins: off
-        - Auto rearrange Spaces: off
+        - Widgets: Dim widgets on desktop: Always
+        - Widgets: Default web browser: Chrome
+        - Windows: Tiled windows have margins: off
+        - Mission Control: Auto rearrange Spaces: off
         - Shortcuts: all off
         - Hot Corners: all off
-    - Screen Saver:
-        - Show as wallpaper: off
+    - Spotlight:
+        - Help Apple Improve Search: off
+        - Results from Apps: Safari off
+    - Wallpaper:
+        - Show on all spaces: off
+        - Screen Saver:
+            - Start screen sager: never
+            - Show as wallpaper: off
     - Screen time
         - Share across devices: off
     - Lock Screen:
-        - Start screen saver: never
         - Turn display off on battery: 10min
         - Turn display off on power: Never
+        - Start screen saver: never
     - Internet Accounts:
         - Add accounts
     - Game Center:
@@ -57,9 +65,8 @@ New Mac setup
     - Keyboard:
         - Key repeat rate: Fastest
         - Turn keyboard backlight off after: 10s
-        - Press PLANET key to: change input source
         - Keyboard shortcuts:
-            - Launchpad * Dock: all off
+            - Dock + Mission Control: all off
             - Keyboard:
                 - Change the way Tab move focus: off
                 - Turn keyboard access on or off: off
@@ -78,7 +85,7 @@ New Mac setup
             - Force click: off
             - Look up: off
             - Tap to click: on
-        - More Gestures:
+        - More Gestures (tab):
             - Swipe between pages: off
             - Notification centre: off
             - App Expose: Swipe down
@@ -88,8 +95,11 @@ New Mac setup
 - Mail:
     - Accounts:
         - Enable this action: off on all
-    - Viewing:
-        - Include related messages: off
+    - Settings:
+        - Viewing (View conversations):
+            - Include related messages: off
+            - Show most recent message at top: on
+        - undo send delay set to off
 - Calendar:
     - General:
         - Default calendar: Main
@@ -103,12 +113,21 @@ New Mac setup
     - iCloud sync: On
 - Pages:
     - show word count
-- Apple Mail
-    - show most recent message at top
-    - undo send delay set to off
 - Quick Time Player
     - save to Desktop 
+- Finder:
+    - General: See these items on the desktop: unselect all
+    - Sidebar: 
+        - Recents: off
+        - Shared: off
+        - Applications: off
+        - Locations: all off, on: External disks, Bin
+    - Advanced:
+    - (open Trash)
+        - (main menu: File > Add to Sidebar)
+    - (Actual sidebar):
+        - Locations > Airdrop: (dragg to "Favourites")
+        - Locations: right click: Remove from Sidebar
+        - (open `~` and dragg it to sidebar)
+        - (create new folder `~/Developer` and dragg it to "Favourites")
 
-
-# Trash in Finder
-Open the Trash, then go to the File menu and click "Add to Sidebar", and it'll show up.

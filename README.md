@@ -2,12 +2,13 @@
 
 1. Programatic macOS setup: `./macos.sh`
 2. Follow manual macOS setup: `manual-setup.md`
-3. Install tools + apps: `./tools-brew.sh`
-4. Programatic apps setup: `./apps-setup.sh`
+3. Configure [GitHub SSH key](#github-ssh-key) 
+4. Install tools + apps: `./homebrew.sh`
+5. Programatic apps setup: `./apps-setup.sh`
 
 
 ## Git
-`./apps/git.sh`
+`sudo sh ./apps/git.sh`
 
 
 ## ZSH
@@ -88,13 +89,6 @@ Prevent license check:
 sudo vi /etc/hosts
 127.0.0.1   license.sublimehq.com
 sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
-```
-
-
-## iTerm2
-```
-cp ./apps/com.googlecode.iterm2.plist ~/Library/Preferences/
-killall iTerm2
 ```
 
 

@@ -24,7 +24,6 @@ fi
 brew analytics off
 
 brew install --formula \
-    bat \
     btop \
     curl \
     git \
@@ -32,6 +31,7 @@ brew install --formula \
     graphicsmagick \
     imageoptim-cli \
     jq \
+    libpq \
     mas \
     node \
     rsync \
@@ -55,19 +55,15 @@ brew install --cask \
     hex-fiend \
     httpie \
     imageoptim \
-    iterm2 \
     keycastr \
-    libpq \
     rectangle \
-    shotcut \
     spotify \
     sublime-text \
     ticktick \
-    thunderbird \
     tor-browser \
     transmission \
     vlc \
-    whatsapp \
+    whatsapp
 
 # Linking Postgresql keg (not installing the whole DB, that should be run in container)
 brew link --force libpq
@@ -84,7 +80,7 @@ mas install 545519333
 mas install 1566140414
 
 # Judo: Design and Build Apps
-mas install 1564578427
+#mas install 1564578427
 
 # Oh my zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
@@ -98,10 +94,6 @@ fi
 # zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
-
-# zsh-bat. requires `bat` to be installed
-git clone https://github.com/jeffreytse/zsh-bat.git ~/.zsh/zsh-bat
-echo "source ~/.zsh/zsh-bat/zsh-bat.plugin.zsh" >> ~/.zshrc
 
 # zsh-completions
 git clone https://github.com/zsh-users/zsh-completions ~/.zsh/zsh-completions
@@ -121,7 +113,6 @@ git config --global init.defaultBranch main
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 echo "\n"
-echo "⚠️ Install AlexCodes via: https://www.alexcodes.app/"
 echo "⚠️ Install Mousecap via: https://github.com/alexzielenski/Mousecape/releases"
 echo "\n"
 
