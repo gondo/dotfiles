@@ -39,6 +39,11 @@ New Mac setup
         - Mission Control: Auto rearrange Spaces: off
         - Shortcuts: all off
         - Hot Corners: all off
+    - Menu Bar:
+        - Spotlight: off
+        - Bluetooth: on
+        - Text input: on
+        - Weather: on
     - Spotlight:
         - Help Apple Improve Search: off
         - Results from Apps: Safari off
