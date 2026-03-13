@@ -130,4 +130,7 @@ New Mac setup
         - Locations: right click: Remove from Sidebar
         - (open `~` and dragg it to sidebar)
         - (create new folder `~/Developer` and dragg it to "Favourites")
-
+- Rectangle:
+    - General:
+        - Launch on login: on
+        - Repeated commands: cycle sizes on half actions
