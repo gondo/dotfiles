@@ -1,10 +1,11 @@
 # gondo's dotfiles
 
-1. Programatic macOS setup: `./macos.sh`
-2. Follow manual macOS setup: `manual-setup.md`
+1. Programatic macOS setup: `./1-macos.sh`
+2. Follow manual macOS setup: `2-manual-setup.md`
 3. Configure [GitHub SSH key](#github-ssh-key) 
-4. Install tools + apps: `./homebrew.sh`
-5. Programatic apps setup: `./apps-setup.sh`
+4. Install tools + apps: `./3-homebrew.sh`
+5. Programatic apps setup: `./4-apps-setup.sh`
+6. Follow steps bellow
 
 
 ## Git

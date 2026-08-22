@@ -61,7 +61,6 @@ brew install --cask \
     sublime-text \
     ticktick \
     tor-browser \
-    transmission \
     vlc \
     whatsapp
 
@@ -81,6 +80,8 @@ mas install 1566140414
 
 # Judo: Design and Build Apps
 #mas install 1564578427
+
+# NOTE: Transmission is installed separatelly outside of cask to pin 4.0.6 that doesn't have annoying popups
 
 # Oh my zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then

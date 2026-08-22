@@ -33,7 +33,14 @@ fi
 
 ###############################################################################
 # Transmission.app                                                            #
+# Pinned on 4.0.6 that doesn't have annoying popups                           #
 ###############################################################################
+
+curl -L -o /tmp/Transmission-4.0.6.dmg https://github.com/transmission/transmission/releases/download/4.0.6/Transmission-4.0.6.dmg
+hdiutil attach /tmp/Transmission-4.0.6.dmg
+rm -rf /Applications/Transmission.app
+cp -R "/Volumes/Transmission/Transmission.app" /Applications/
+hdiutil detach "/Volumes/Transmission"
 
 if open -Ra "Transmission"; then
 
