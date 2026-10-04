@@ -44,7 +44,6 @@ brew install --cask \
     apptrap \
     chatgpt \
     devcleaner \
-    docker \
     easyfind \
     electrum \
     figma \
@@ -56,6 +55,7 @@ brew install --cask \
     httpie \
     imageoptim \
     keycastr \
+    orbstack \
     rectangle \
     spotify \
     sublime-text \
